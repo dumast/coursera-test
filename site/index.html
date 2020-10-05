@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Terence Dumas Portfolio</title>
+	<link rel="stylesheet" href="../stylesheets/styles.css" type="text/css" media="screen" />
 </head>
 <body>
 	<h1>My Programming Journey</h1>
@@ -13,19 +14,19 @@
 	<ul>
 		<li>Python: 
 			<ul>
-				<li>arithmetic basics</li>
-				<li>loops and conditions</li>
+				<li>Arithmetic basics</li>
+				<li>Loops and conditions</li>
 			</ul>
 		</li>
 		<li>C:
 		<ul>
-				<li>tarithmetic basics</li>
-				<li>loops and conditions</li>
+				<li>Arithmetic basics</li>
+				<li>Loops and conditions</li>
 			</ul>
 		</li>
 		<li>HTML / CSS / JavaScript: 
 			<ul>
-				<li>basic website coding</li>
+				<li>basic website markup</li>
 			</ul>
 		</li>
 	</ul>
@@ -35,6 +36,18 @@
 		<li><a href="https://github.com/dumast/" target="blank_">Github</a></li>
 	</ul>
 	<img src="https://grabify.link/TZB11G">
+	<button onclick="toggleDarkMode()">Toggle dark mode</button>
+
+
+	<script type="text/javascript">
+		function toggleDarkMode() {
+			let element = document.body;
+			element.classList.toggle("dark-mode");
+		}
+		// element is the part of the html that has the tag body
+		// the second line changes its class to that of dark-mode
+	</script>
 
 </body>
+
 </html>
