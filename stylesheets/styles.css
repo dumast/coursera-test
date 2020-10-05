@@ -1,7 +1,8 @@
 body {
   padding: 3rem;
   background-color: white;
-  color: black;
+  color: #3c3836;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .dark-mode {
