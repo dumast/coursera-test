@@ -1,0 +1,14 @@
+body {
+  padding: 3rem;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+a:link {
+  color: #458588;
+}
