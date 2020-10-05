@@ -1,6 +1,6 @@
 body {
   padding: 3rem;
-  background-color: white;
+  background-color: #DCDCDC;
   color: #3c3836;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -10,6 +10,28 @@ body {
   color: #ebdbb2;
 }
 
-a:link {
+.dark-mode button {
+	background-color: #282828;
+  	border-color: #ebdbb2;
+  	color: #ebdbb2;
+  	padding: 15px 15px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+
+button {
+  	background-color: #DCDCDC;
+  	border-color: #3c3836;
+  	color: #3c3836;
+  	padding: 15px 15px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+
+a:link.a:visited {
   color: #458588;
 }
