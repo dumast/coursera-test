@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name = viewport content = "width = device-width, initial-scale = 1">
 	<title>Terence Dumas Portfolio</title>
 	<link rel="stylesheet" href="../stylesheets/styles.css" type="text/css" media="screen" />
 </head>
@@ -38,15 +38,13 @@
 
 	<!-- <img src="https://grabify.link/TZB11G"> -->
 
-	<div style="text-align:center; padding:50px 10px 50px 10px">
-		<a href="python.html"><button>Python</button></a>
-		<a href="c.html"><button>C</button></a>
-		<a href="htmlcssjs.html"><button>HTML/CSS/JavaScript</button></a>
-	</div>
-
-	<div style="text-align:center;">
-		<button onclick="toggleDarkMode()">Toggle dark mode</button>
-	</div>
+	<div id = "mySidenav" class="sidenav">
+        <a href="index.html" id = "home"><button>Home</button></a>
+        <a href="python.html" id = "python"><button>Python</button></a>
+        <a href="c.html" id = "c"><button>C</button></a>
+        <a href="htmlcssjs.html" id = "htmlcssjs"><button>HTML/CSS/JS</button></a>
+        <a id = "dark"> <button onclick="toggleDarkMode()">Toggle dark mode</button></a>
+    </div>
 
 	<script type="text/javascript">
 		function toggleDarkMode() {
@@ -58,5 +56,7 @@
 	</script>
 
 </body>
+
+
 
 </html>

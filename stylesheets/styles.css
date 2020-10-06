@@ -19,6 +19,7 @@ body {
   	text-decoration: none;
   	display: inline-block;
   	font-size: 16px;
+  	width: 170px;
 }
 
 button {
@@ -30,6 +31,41 @@ button {
   	text-decoration: none;
   	display: inline-block;
   	font-size: 16px;
+  	width: 170px;
+}
+
+#mySidenav a {
+	position: absolute;
+	left: -150px;
+	transition: 0.3s;
+	padding:15px
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0; 
+}
+
+#home {
+  top: 20px;
+}
+
+#python {
+  top: 80px;
+}
+
+#c {
+  top: 140px;
+}
+
+#htmlcssjs {
+  top: 200px;
+}
+#dark {
+	top: 320px;
 }
 
 a:link a:visited{

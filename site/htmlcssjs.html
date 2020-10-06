@@ -10,17 +10,15 @@
 
 	<h1>My HTML, CSS and JavaScipt experience</h1>
 
-	<p>10/05/2020: I already have some basic experience in HTML as I tried to make a website for the Aerospace Club at my school</p> 
+	<p>10/05/2020: I already have some basic experience in HTML as I tried to make a website for the Aerospace Club at my school. After that, I didn't really do anything much in this language until I joined the HackClub, where learning front-end development is quite needed.</p> 
 
-	<div style="text-align:center; padding:50px 10px 50px 10px">
-		<a href="python.html"><button>Python</button></a>
-		<a href="c.html"><button>C</button></a>
-		<a href="index.html"><button>Home</button></a>
-	</div>
-
-	<div style="text-align:center;">
-		<button onclick="toggleDarkMode()">Toggle dark mode</button>
-	</div>
+	<div id = "mySidenav" class="sidenav">
+        <a href="index.html" id = "home"><button>Home</button></a>
+        <a href="python.html" id = "python"><button>Python</button></a>
+        <a href="c.html" id = "c"><button>C</button></a>
+        <a href="htmlcssjs.html" id = "htmlcssjs"><button>HTML/CSS/JS</button></a>
+        <a id = "dark"> <button onclick="toggleDarkMode()">Toggle dark mode</button></a>
+    </div>
 
 	<script type="text/javascript">
 		function toggleDarkMode() {
