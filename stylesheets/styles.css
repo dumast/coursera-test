@@ -32,6 +32,10 @@ button {
   	font-size: 16px;
 }
 
-a:link.a:visited {
-  color: #458588;
+a:link a:visited{
+  color: blue;
+}
+
+.dark-mode a:link, .dark-mode a:visited{
+  color: cyan;
 }
