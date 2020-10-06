@@ -1,5 +1,5 @@
 body {
-  padding: 3rem;
+  padding: 0rem 3rem 3rem 5rem;
   background-color: #DCDCDC;
   color: #3c3836;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -14,12 +14,6 @@ body {
 	background-color: #282828;
   	border-color: #ebdbb2;
   	color: #ebdbb2;
-  	padding: 15px 15px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
-  	width: 170px;
 }
 
 button {
@@ -31,13 +25,15 @@ button {
   	text-decoration: none;
   	display: inline-block;
   	font-size: 16px;
-  	width: 170px;
+  	width: 180px;
+  	border-right-width: 31px;
+
 }
 
 #mySidenav a {
 	position: absolute;
 	left: -150px;
-	transition: 0.3s;
+	transition: .3s;
 	padding:15px
 	width: 100px;
 	text-decoration: none;
@@ -46,7 +42,7 @@ button {
 }
 
 #mySidenav a:hover {
-  left: 0; 
+  left: 0px; 
 }
 
 #home {
