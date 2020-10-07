@@ -1,8 +1,53 @@
 body {
-  padding: 0rem 3rem 3rem 5rem;
+  padding: 3rem 3rem 3rem 5rem;
   background-color: #DCDCDC;
   color: #003366;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+headtop{
+	position: fixed;
+	right: 5px;
+	top: 5px;
+}
+
+
+img {
+	width:50px;
+	color: white;
+}
+
+.bar{
+  	transition: .3s;
+}
+
+.headbar{
+	position:fixed;
+	top: -70px;
+	left:0;
+	right:0;
+	padding: 10px;
+	width:100%;
+	transition: 0.4s;
+}
+
+.change .headbar {
+	background-color: #003366;
+	top:0px;
+}
+
+.dark-mode .change .headbar {
+	background-color: #ebdbb2;
+}
+
+
+.container {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.change .bar {
+  opacity:0;
 }
 
 .dark-mode footer{
@@ -71,23 +116,8 @@ button {
   left: 0px; 
 }
 
-#home {
-  top: 20px;
-}
-
-#python {
-  top: 80px;
-}
-
-#c {
-  top: 140px;
-}
-
-#htmlcssjs {
-  top: 200px;
-}
 #dark {
-	top: 320px;
+	bottom:50px;
 }
 
 a:link a:visited{

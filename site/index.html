@@ -6,6 +6,27 @@
 	<link rel="stylesheet" href="../stylesheets/styles.css" type="text/css" media="screen" />
 </head>
 <body>
+
+	<headtop>
+		<div class="container" onclick="menuFunction(this)">
+			<div class="bar"><img src="https://iconvulture.com/wp-content/uploads/2017/12/arrow-down-on-black-circular-background.png"></div>
+			<div class="headbar">
+				<button>Home</button>
+				<button>Python</button>
+				<button>C</button>
+				<button>HTML/CSS/JS</button>
+			</div>
+		</div>
+	</headtop>
+
+	<script>
+		function menuFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+
+
+
 	<div id="top" style = "padding:0px 0px 1px 0px">
 		<h1>My Programming Journey</h1>
 		<h3>Terence Dumas</h3>
@@ -43,10 +64,6 @@
 	<!-- <img src="https://grabify.link/TZB11G"> -->
 
 	<div id = "mySidenav" class="sidenav">
-        <a href="index.html" id = "home"><button>Home</button></a>
-        <a href="python.html" id = "python"><button>Python</button></a>
-        <a href="c.html" id = "c"><button>C</button></a>
-        <a href="htmlcssjs.html" id = "htmlcssjs"><button>HTML/CSS/JS</button></a>
         <a id = "dark"> <button onclick="toggleDarkMode()">Toggle dark mode</button></a>
     </div>
 
@@ -55,8 +72,6 @@
 			let element = document.body;
 			element.classList.toggle("dark-mode");
 		}
-		// element is the part of the html that has the tag body
-		// the second line changes its class to that of dark-mode
 	</script>
 
 </body>
