@@ -7,14 +7,27 @@ body {
 
 headtop{
 	position: fixed;
+	text-align:center;
 	right: 5px;
 	top: 5px;
 }
 
-
-img {
+.container img {
 	width:50px;
-	color: white;
+}
+
+.dark-mode .container .one {
+	width:0px;  
+	padding: 25.5px;
+	background: url(https://i.imgur.com/mXd7Wmo.png);
+	background-size: 50px;
+}
+
+.dark-mode .container .two {
+	width:0px;  
+	padding: 25.5px;
+	background: url(https://i.imgur.com/ul2LrnQ.png);
+	background-size: 50px;
 }
 
 .bar{
@@ -29,11 +42,13 @@ img {
 	padding: 10px;
 	width:100%;
 	transition: 0.4s;
+	opacity: 0;
 }
 
 .change .headbar {
 	background-color: #003366;
 	top:0px;
+	opacity:100;
 }
 
 .dark-mode .change .headbar {
@@ -91,11 +106,17 @@ button {
   	background-color: #DCDCDC;
   	border-color: #003366;
   	color: #003366;
-  	padding: 15px 15px;
+  	padding: 10px 10px;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
   	font-size: 16px;
+  	width: 160px;
+
+}
+
+#special {
+  	padding: 15px 15px;
   	width: 180px;
   	border-right-width: 31px;
 
