@@ -1,2 +1,8 @@
 # portfolio
-Terence's portfolio
+
+Terence's Portfolio.
+
+## Tech Stack
+
+- HTML
+- CSS
