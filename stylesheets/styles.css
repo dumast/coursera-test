@@ -1,12 +1,12 @@
 body {
-  padding: 0rem 3rem 3rem 3rem;
-  background-color: #DCDCDC;
-  color: #003366;
-  overflow-x: hidden;
-  position: relative;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0rem 3rem 3rem 3rem;
+	background-color: #DCDCDC;
+	color: #003366;
+	overflow-x: hidden;
+	position: relative;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #pad {
@@ -16,7 +16,7 @@ body {
 #box {
 	position: absolute;
 	background-color: red;
-	right:10px;
+	right: 10px;
 	width: 220px;
 	top: 400px;
 	height: 730px;
@@ -35,50 +35,50 @@ h6 {
 	margin-top: 100px;
 }
 
-headtop{
+headtop {
 	position: fixed;
-	text-align:center;
+	text-align: center;
 	right: 5px;
 	top: 5px;
 }
 
 .container img {
-	width:50px;
+	width: 50px;
 }
 
 .dark-mode .container .one {
-	width:0px;  
+	width: 0px;
 	padding: 25.5px;
 	background: url(https://i.imgur.com/mXd7Wmo.png);
 	background-size: 50px;
 }
 
 .dark-mode .container .two {
-	width:0px;  
+	width: 0px;
 	padding: 25.5px;
 	background: url(https://i.imgur.com/ul2LrnQ.png);
 	background-size: 50px;
 }
 
-.bar{
-  	transition: .3s;
+.bar {
+	transition: .3s;
 }
 
-.headbar{
-	position:fixed;
+.headbar {
+	position: fixed;
 	top: -70px;
-	left:0;
-	right:0;
+	left: 0;
+	right: 0;
 	padding: 10px;
-	width:100%;
+	width: 100%;
 	transition: 0.4s;
 	opacity: 0;
 }
 
 .change .headbar {
 	background-color: #003366;
-	top:0px;
-	opacity:100;
+	top: 0px;
+	opacity: 100;
 }
 
 .dark-mode .change .headbar {
@@ -92,13 +92,13 @@ headtop{
 }
 
 .change .bar {
-  opacity:0;
+	opacity: 0;
 }
 
-.dark-mode footer{
+.dark-mode footer {
 	border-color: #ebdbb2;
 	background-color: #ebdbb2;
-	color:;
+	color: ;
 }
 
 footer {
@@ -113,69 +113,73 @@ footer {
 	background-color: #003366;
 }
 
-footer a:link, footer a:visited {
-  color: #DCDCDC;
-  text-decoration: none;
+footer a:link,
+footer a:visited {
+	color: #DCDCDC;
+	text-decoration: none;
 }
 
-.dark-mode footer a:link, .dark-mode footer a:visited {
-	 color: #282828;
-	 text-decoration: none;
+.dark-mode footer a:link,
+.dark-mode footer a:visited {
+	color: #282828;
+	text-decoration: none;
 }
 
-h1, h3, h6{
+h1,
+h3,
+h6 {
 	text-align: center;
 }
 
 .separatorTop {
-	top-padding:10px;
+	top-padding: 10px;
 }
 
 .separatorMid {
-	width:100%;
-	padding:5px 0px 5px 0px;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
 	background-color: #003366;
 }
 
 .dark-mode .separatorMid {
-	width:100%;
-	padding:5px 0px 5px 0px;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
 	background-color: #ebdbb2;
 }
 
 .separatorBottom {
-	bottom-padding:10px;
+	bottom-padding: 10px;
 }
 
 .dark-mode {
-  background-color: #282828;
-  color: #ebdbb2;
+	background-color: #282828;
+	color: #ebdbb2;
 }
 
 .dark-mode button {
 	background-color: #282828;
-  	border-color: #ebdbb2;
-  	color: #ebdbb2;
+	border-color: #ebdbb2;
+	color: #ebdbb2;
 }
 
 button {
-  	background-color: #DCDCDC;
-  	border-color: #003366;
-  	color: #003366;
-  	padding: 10px 10px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
-  	width: 160px;
+	background-color: #DCDCDC;
+	border-color: #003366;
+	color: #003366;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 160px;
 }
 
 #special {
-  	padding: 15px 15px;
-  	width: 180px;
-  	border-right-width: 31px;
-  	border-top-right-radius: 10px;
-  	border-bottom-right-radius: 10px;
+	padding: 15px 15px;
+	width: 180px;
+	border-right-width: 31px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 
 }
 
@@ -183,35 +187,36 @@ button {
 	position: fixed;
 	left: -150px;
 	transition: .3s;
-	padding:15px
-	width: 100px;
+	padding: 15px width: 100px;
 	text-decoration: none;
 	font-size: 20px;
 	border-radius: 0 5px 5px 0;
 }
 
 #mySidenav a:hover {
-  left: 0px; 
+	left: 0px;
 }
 
 #dark {
-	bottom:50px;
+	bottom: 50px;
 }
 
-a:link, a:visited{
-  color: blue;
+a:link,
+a:visited {
+	color: blue;
 }
 
- #backToTop {
- 	color: white;
- 	list-style-type: none;
- 	cursor: pointer;
- }
+#backToTop {
+	color: white;
+	list-style-type: none;
+	cursor: pointer;
+}
 
- .dark-mode #backToTop {
- 	color: black;
- }
+.dark-mode #backToTop {
+	color: black;
+}
 
-.dark-mode a:link, .dark-mode a:visited{
-  color: cyan;
+.dark-mode a:link,
+.dark-mode a:visited {
+	color: cyan;
 }
