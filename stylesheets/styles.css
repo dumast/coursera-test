@@ -6,6 +6,7 @@ body {
 	position: relative;
 	text-align: justify;
 	text-justify: inter-word;
+	line-height: 200%;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -105,7 +106,7 @@ footer {
 	display: block;
 	border-style: solid;
 	border-color: #003366;
-	position: fixed;
+	position: ;
 	left: 0;
 	right: 0;
 	bottom: 0;
