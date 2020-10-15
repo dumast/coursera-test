@@ -5,6 +5,7 @@ function menuFunction(x) {
 function scrollFunction(x) {
   document.body.scrollTop = x;
   document.documentElement.scrollTop = x;
+  SmoothVerticalScrolling(myelement, 275, "center");
 }
 
 function toggleDarkMode() {
