@@ -19,17 +19,19 @@ function toggleMenuBar() {
   }
 }
 
-function SmoothHorizontalScrolling(e, time, amount, start) {
-    var eAmt = amount / 100;
+function SmoothVerticalScrolling(e, time, where) {
+    var eTop = e.getBoundingClientRect().top;
+    var eAmt = eTop / 100;
     var curTime = 0;
-    var scrollCounter = 0;
     while (curTime <= time) {
-        window.setTimeout(SHS_B, curTime, e, scrollCounter, eAmt, start);
+        window.setTimeout(SVS_B, curTime, eAmt, where);
         curTime += time / 100;
-        scrollCounter++;
     }
 }
 
-function SHS_B(e, sc, eAmt, start) {
-    e.scrollLeft = (eAmt * sc) + start;
+function SVS_B(eAmt, where) {
+    if(where == "center" || where == "")
+        window.scrollBy(0, eAmt / 2);
+    if (where == "top")
+        window.scrollBy(0, eAmt);
 }
