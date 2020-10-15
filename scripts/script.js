@@ -1,3 +1,10 @@
+window.onload = function() {
+  if (localStorage.getItem("theme") == "dark") {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+  } 
+}
+
 function menuFunction(x) {
   x.classList.toggle("change");
 }
@@ -11,6 +18,7 @@ function scrollFunction(x) {
 function toggleDarkMode() {
   let element = document.body;
   element.classList.toggle("dark-mode");
+  localStorage.setItem("theme", "dark");
 }
 
 function toggleMenuBar() {
