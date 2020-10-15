@@ -48,13 +48,9 @@ headtop {
 }
 
 .dark-mode .container .one {
-	background-color: #003366;
-  	mask-image: url("/images/extend.png")
 }
 
 .dark-mode .container .two {
-	background-color: #ebdbb2;
-  	mask-image: url("/images/retract.png")
 }
 
 .bar {
