@@ -50,14 +50,14 @@ headtop {
 .dark-mode .container .one {
 	width: 0px;
 	padding: 25.5px;
-	background: url(https://i.imgur.com/mXd7Wmo.png);
+	background: url(../images/extend.png);
 	background-size: 50px;
 }
 
 .dark-mode .container .two {
 	width: 0px;
 	padding: 25.5px;
-	background: url(https://i.imgur.com/ul2LrnQ.png);
+	background: url(../images/retract.png);
 	background-size: 50px;
 }
 
