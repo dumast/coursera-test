@@ -6,3 +6,4 @@ Terence's Portfolio.
 
 - HTML
 - CSS
+- JS
