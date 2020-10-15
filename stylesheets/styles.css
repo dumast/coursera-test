@@ -99,14 +99,12 @@ headtop {
 .dark-mode footer {
 	border-color: #ebdbb2;
 	background-color: #ebdbb2;
-	color: ;
 }
 
 footer {
 	display: block;
 	border-style: solid;
 	border-color: #003366;
-	position: ;
 	left: 0;
 	right: 0;
 	bottom: 0;
