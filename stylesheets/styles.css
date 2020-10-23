@@ -8,6 +8,7 @@ body {
 	text-justify: inter-word;
 	line-height: 200%;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	transition: 500ms;
 }
 
 #pad {
@@ -24,16 +25,19 @@ body {
 	z-index: -1;
 }
 
+#trans {
+	transition: 0.4s;
+}
+
+.menu-bar #trans {
+	margin-top: 100px;
+}
+
 h6 {
 	font-size: 40px;
 	text-decoration: bold;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
-	transition: 0.4s;
-}
-
-.menu-bar h6 {
-	margin-top: 100px;
 }
 
 headtop {
