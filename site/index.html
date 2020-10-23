@@ -11,13 +11,31 @@
 <body>
 	<headtop>
 		<div class="container" onclick="menuFunction(this); toggleMenuBar();">
-			<div class="bar"><img class="one" src="../images/extend.png"></div>
+			<div class="bar">
+				<svg class = "one" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+					<style type="text/css">
+			   		.st0{fill:none;stroke-width:35;stroke-miterlimit:10;}
+		   			</style>
+					<circle class="st0" cx="247.99" cy="251.18" r="217.16"/>
+		   			<path d="M170.12,204.17c0,0-23.18-3.36-18.47,18.47l85.65,88.67c0,0,13.1,13.44,24.52,0l87.33-89.01c0,0,3.69-21.53-18.14-18.32
+			   		L250.2,283.1L170.12,204.17z"/>
+		   		</svg>
+		   </div>
 			<div class="headbar">
-				<button onclick="scrollFunction(0)">Home</button>
+				<a href="#home"><button onclick="scrollFunction(0)">Home</button></a>
 				<a href="#python"> <button>Python</button></a>
 				<a href="#c"> <button>C</button></a>
 				<a href="#htmlcssjs"><button>HTML/CSS/JS</button></a>
-				<img class="two" src="../images/retract.png" style="position: absolute; right: 25px; top: 5px">
+				<svg class = "two" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+					<style type="text/css">
+			   		.st0{fill:none;stroke-width:35;stroke-miterlimit:10;}
+		   			</style>
+					<circle class="st0" cx="247.99" cy="251.18" r="217.16"/>
+		   			<path d="M170.12,204.17c0,0-23.18-3.36-18.47,18.47l85.65,88.67c0,0,13.1,13.44,24.52,0l87.33-89.01c0,0,3.69-21.53-18.14-18.32
+			   		L250.2,283.1L170.12,204.17z"/>
+		   		</svg>
 			</div>
 		</div>
 	</headtop>
@@ -95,10 +113,12 @@
 
 		<footer>
 			<ul style="list-style-type">
-				<li><a href="https://github.com/dumast/" target="blank_"><img
-							src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg"
-							style="width: 20px"></img></a></li>
-				<li id="backToTop" style="position: absolute; right: 10px; bottom: 13px"><a
+				<li><a href="https://github.com/dumast/" target="blank_">
+					<img
+						src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg"
+						style="width: 20px; position: absolute; left: 30px; bottom: 20px">
+					</img></a></li>
+				<li id="backToTop" style="position: absolute; right: 30px; bottom: 11px"><a
 						onclick="scrollFunction(0)">Back to top</a></li>
 			</ul>
 		</footer>

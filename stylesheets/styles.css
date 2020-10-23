@@ -47,10 +47,28 @@ headtop {
 	width: 50px;
 }
 
-.dark-mode .container .one {
+.one {
+	stroke:#003366;
+	fill: #003366;
 }
 
-.dark-mode .container .two {
+.dark-mode .one {
+	stroke:#ebdbb2;
+	fill: #ebdbb2;
+}
+
+.two {
+	stroke:#DCDCDC;
+	fill: #DCDCDC;
+	position: absolute; 
+	right: 25px; 
+	top: 5px;
+	transform: rotate(180deg);
+}
+
+.dark-mode .two {
+	stroke:#282828;
+	fill: #282828;
 }
 
 .bar {
@@ -88,20 +106,23 @@ headtop {
 	opacity: 0;
 }
 
-.dark-mode footer {
-	border-color: #ebdbb2;
-	background-color: #ebdbb2;
-}
-
 footer {
+	box-sizing: border-box;
 	display: block;
 	border-style: solid;
 	border-color: #003366;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	font-size: 10px;
 	background-color: #003366;
+	height: 60px;
+	font-size: 10px;
+	position: relative;
+	width: 112%;
+	margin-left: -3.5rem;
+	margin-bottom: -3.6rem;
+}
+
+.dark-mode footer {
+	border-color: #ebdbb2;
+	background-color: #ebdbb2;
 }
 
 footer a:link,
@@ -189,7 +210,7 @@ button {
 }
 
 #dark {
-	bottom: 50px;
+	bottom: 70px;
 }
 
 a:link,
