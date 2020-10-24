@@ -170,11 +170,10 @@
 
             function toggleMode() {
                 var theme = getCookie("theme");
-                if (theme == "default") {
-                    goDark();
-                }
                 if (theme == "dark") {
                     goDefault();
+                } else {
+                    goDark();
                 }
             }
 
