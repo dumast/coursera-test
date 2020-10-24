@@ -1,13 +1,20 @@
 body {
     padding: 0rem 3rem 3rem 3rem;
-    background-color: #DCDCDC;
-    color: #003366;
     overflow-x: hidden;
     position: relative;
     text-align: justify;
     text-justify: inter-word;
     line-height: 200%;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #DCDCDC;
+    color: #003366;
+    border-color: #003366;
+}
+
+.dark-mode {
+    background-color: #282828;
+    color: #ebdbb2;
+    border-color: #ebdbb2;
 }
 
 #pad {
@@ -24,16 +31,19 @@ body {
     z-index: -1;
 }
 
+#trans {
+    transition: 0.4s;
+}
+
+.menu-bar #trans {
+    margin-top: 100px;
+}
+
 h6 {
     font-size: 40px;
     text-decoration: bold;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    transition: 0.4s;
-}
-
-.menu-bar h6 {
-    margin-top: 100px;
 }
 
 headtop {
@@ -47,9 +57,29 @@ headtop {
     width: 50px;
 }
 
-.dark-mode .container .one {}
+.one {
+    stroke: #003366;
+    fill: #003366;
+}
 
-.dark-mode .container .two {}
+.dark-mode .one {
+    stroke: #ebdbb2;
+    fill: #ebdbb2;
+}
+
+.two {
+    stroke: #DCDCDC;
+    fill: #DCDCDC;
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    transform: rotate(180deg);
+}
+
+.dark-mode .two {
+    stroke: #282828;
+    fill: #282828;
+}
 
 .bar {
     transition: .3s;
@@ -85,20 +115,23 @@ headtop {
     opacity: 0;
 }
 
-.dark-mode footer {
-    border-color: #ebdbb2;
-    background-color: #ebdbb2;
-}
-
 footer {
+    box-sizing: border-box;
     display: block;
     border-style: solid;
     border-color: #003366;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 10px;
     background-color: #003366;
+    height: 60px;
+    font-size: 10px;
+    position: relative;
+    width: 112%;
+    margin-left: -3.5rem;
+    margin-bottom: -3.6rem;
+}
+
+.dark-mode footer {
+    border-color: #ebdbb2;
+    background-color: #ebdbb2;
 }
 
 footer a:link,
@@ -119,36 +152,24 @@ h6 {
     text-align: center;
 }
 
-.separatorTop {
-    top-padding: 10px;
-}
-
-.separatorMid {
+.separator {
     width: 100%;
     padding: 5px 0px 5px 0px;
     background-color: #003366;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.dark-mode .separatorMid {
+.dark-mode .separator {
     width: 100%;
     padding: 5px 0px 5px 0px;
     background-color: #ebdbb2;
-}
-
-.separatorBottom {
-    bottom-padding: 10px;
 }
 
 .dark-mode {
     background-color: #282828;
     color: #ebdbb2;
     border-color: #ebdbb2;
-}
-
-.dark-mode button {
-    background-color: #282828;
-    border-color: #ebdbb2;
-    color: #ebdbb2;
 }
 
 button {
@@ -161,6 +182,13 @@ button {
     display: inline-block;
     font-size: 16px;
     width: 160px;
+    outline: none;
+}
+
+.dark-mode button {
+    background-color: #282828;
+    border-color: #ebdbb2;
+    color: #ebdbb2;
 }
 
 #special {
@@ -175,7 +203,6 @@ button {
     position: fixed;
     left: -150px;
     transition: .3s;
-    padding: 15px width: 100px;
     text-decoration: none;
     font-size: 20px;
     border-radius: 0 5px 5px 0;
@@ -186,7 +213,7 @@ button {
 }
 
 #dark {
-    bottom: 50px;
+    bottom: 70px;
 }
 
 a:link,
