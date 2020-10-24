@@ -147,6 +147,11 @@
             }
         </script>
 
+        <!-- <p>Test</p> -->
+
+        <button class="theme1">Default</button>
+        <button class="theme2">Dark</button>
+
         <div id="mySidenav" class="sidenav">
             <a id="dark"><button id="special" onclick="toggleMode()">Toggle dark mode</button></a>
         </div>
@@ -173,9 +178,11 @@
                 }
             }
 
+            document.querySelector(".theme1").addEventListener("click", goDefault, false);
+            document.querySelector(".theme2").addEventListener("click", goDark, false);
+
             checkCookie();
         </script>
-
 
     </div>
 
