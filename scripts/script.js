@@ -1,3 +1,5 @@
+var scrolling = false;
+
 function menuFunction(x) {
     x.classList.toggle("change");
 }
@@ -9,8 +11,6 @@ function scrollFunction(x) {
 }
 
 function toggleMenuBar() {
-    if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
-        let element = document.body;
-        element.classList.toggle("menu-bar");
-    }
+    let element = document.body;
+    element.classList.toggle("menu-bar");
 }

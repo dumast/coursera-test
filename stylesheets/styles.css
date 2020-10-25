@@ -1,5 +1,4 @@
 body {
-    padding: 0rem 3rem 3rem 3rem;
     overflow-x: hidden;
     position: relative;
     text-align: justify;
@@ -9,6 +8,11 @@ body {
     background-color: #DCDCDC;
     color: #003366;
     border-color: #003366;
+    margin: 0;
+}
+
+.body {
+    padding: 0rem 3rem 3rem 3rem;
 }
 
 .dark-mode {
@@ -123,10 +127,11 @@ footer {
     background-color: #003366;
     height: 60px;
     font-size: 10px;
-    position: relative;
-    width: 112%;
-    margin-left: -3.5rem;
-    margin-bottom: -3.6rem;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
 }
 
 .dark-mode footer {
@@ -154,10 +159,9 @@ h6 {
 
 .separator {
     width: 100%;
-    padding: 5px 0px 5px 0px;
     background-color: #003366;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .dark-mode .separator {
