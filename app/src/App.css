@@ -1,38 +1,118 @@
-.App {
+html, body {
+  background-image: url('./Images/Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: black;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
+
+.page {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  color: white;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  height: 100%;
+  scroll-snap-align: start;
+  padding: 2em;
+  box-sizing: border-box;
+  overflow-y: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 20%;
+  background-color: #313131;
+  z-index: 20;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menuIcon {
+  position: fixed;
+  right: 10px;
   color: white;
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.arrow {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grayedOut {
+  overflow-y: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #000000c9;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 10px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.mainTitle {
+  font-size: 4em;
+  font-weight: 400;
+  margin-top: 32vh;
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: .9em;
+  color: #C7C7C7;
+  margin-top: .5rem;
+  font-weight: 200;
+}
+
+.title {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.paragraph {
+  font-size: 1.2em;
+  text-align: left;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.icons {
+  margin-left: 9%;
+  margin-right: 9%;;
+}
+
+.icons * {
+  padding: .2rem;
+  padding-top: 1rem;
 }
