@@ -26,6 +26,7 @@ section {
   box-sizing: border-box;
   overflow-y: hidden;
   position: relative;
+  text-align: left;
 }
 
 @media screen and (min-width: 600px) {
@@ -70,6 +71,7 @@ section {
   height: 100vh;
   width: 100vw;
   background: #000000c9;
+  z-index: 1;
 }
 
 .bar1, .bar2, .bar3 {
@@ -97,6 +99,7 @@ section {
   font-weight: 400;
   margin-top: 32vh;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .description {
@@ -104,6 +107,7 @@ section {
   color: #C7C7C7;
   margin-top: .5rem;
   font-weight: 200;
+  text-align: center;
 }
 
 .title {
@@ -115,7 +119,6 @@ section {
 
 .paragraph {
   font-size: 1.2em;
-  text-align: left;
   margin-left: 9%;
   margin-right: 9%;
 }
