@@ -12,10 +12,17 @@ export default function MenuIcon(){
     });
 
     const menuTransitions = useTransition(showMenu, null, {
-        from: { opacity: 0, transform: 'translateX(-100%)' },
-        enter: { opacity: 1, transform: 'translateX(0%)' },
-        leave: { opacity: 0, transform: 'translateX(-100%)' },
+        from: { transform: 'translateX(-100%)' },
+        enter: { transform: 'translateX(0%)' },
+        leave: { transform: 'translateX(-100%)' },
     });
+
+    if(showMenu){
+        document.body.classList.add("change");
+    }
+    else if(!showMenu){
+        document.body.classList.remove("change");
+    }
 
     return(
         <nav>
