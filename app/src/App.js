@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import MenuIcon from './Components/MenuIcon'
 import Arrow from './Components/Arrow'
@@ -8,6 +7,7 @@ import Programming from './Components/Programming'
 import Contact from './Components/Contact'
 
 function App() {
+  
   return (
     <>
       <MenuIcon/>
